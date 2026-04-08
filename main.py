@@ -24,6 +24,7 @@ def button_clicked(value):
                         label["text"] = "Error"
                     else:
                         label["text"] = logic.remove_zero_decimal(numA / numB)
+                logic.is_result = True
                 logic.clear_all()
 
         elif value in "+-×÷":
@@ -42,6 +43,7 @@ def button_clicked(value):
         elif value == "%":
             result = float(label["text"]) / 100
             label["text"] = logic.remove_zero_decimal(result)
+            logic.is_result = True
 
     else:  # digits or . or √
         if value == ".":
@@ -55,7 +57,10 @@ def button_clicked(value):
                 result = float(label["text"]) ** 0.5
                 label["text"] = logic.remove_zero_decimal(result)
         elif value in "0123456789":
-            if label["text"] == "0":
+            if logic.is_result:
+                label["text"] = value
+                logic.is_result = False
+            elif label["text"] == "0":
                 label["text"] = value
             else:
                 label["text"] += value

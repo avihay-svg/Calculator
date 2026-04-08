@@ -2,6 +2,7 @@
 A = 0
 operator = None
 B = None
+is_result = False
 
 
 # Clear all function
@@ -10,6 +11,7 @@ def clear_all():
     A = "0"
     operator = None
     B = None
+    is_result = False
 
 
 # Removing decimal in case the number has none
