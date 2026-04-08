@@ -1,13 +1,30 @@
 # Modern Python Calculator
-A clean, functional calculator built with Python and Tkinter.
+A clean and modular graphical calculator built with Python and Tkinter.
 
 ## Features
-* Basic arithmetic operations (+, -, *, /)
-* Advanced functions: Square root (√), Percentage (%), Sign toggle (+/-)
-* Modern UI with custom color palette
-* Responsive layout (Centered window on startup)
-* Error handling (Division by zero, negative square roots)
+* **Core Math**: Supports addition, subtraction, multiplication, and division.
+* **Advanced Ops**: Includes square root (√), percentage (%), and sign toggle (+/-).
+* **Smart UI**: Modern color palette with a responsive window that centers on startup.
+* **Error Handling**: Built-in logic for division by zero and negative square roots.
 
-## How to Run
-1. Ensure you have Python installed.
-2. Run `python calculator.py`
+## Project Structure
+* `main.py`: Entry point and UI management.
+* `logic.py`: Core mathematical functions and state management.
+* `constants.py`: UI configurations (colors, layout).
+* `requirements.txt`: Project dependencies (contains `tk`).
+* `.python-version`: Specifies the Python version used (3.14.3).
+
+## Setup & Run
+1. **Clone the repo**:
+   ```bash
+   git clone https://github.com/avihay-svg/Calculator.git
+   ```
+2.Install dependencies:
+```bash
+   pip install -r requirements.txt
+```
+3.Run the app:
+```
+python main.py
+```
+##רומ
