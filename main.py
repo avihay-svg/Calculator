@@ -56,6 +56,7 @@ def button_clicked(value):
             else:
                 result = float(label["text"]) ** 0.5
                 label["text"] = logic.remove_zero_decimal(result)
+                logic.is_result = True
         elif value in "0123456789":
             if logic.is_result:
                 label["text"] = value
