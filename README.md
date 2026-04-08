@@ -17,7 +17,7 @@ A clean and modular graphical calculator built with Python and Tkinter.
 ## Setup & Run
 1. **Clone the repo**:
 ```bash
-  git clone https://github.com/avihay-svg/Calculator.git
+git clone https://github.com/avihay-svg/Calculator.git
 ```
 2.**Install dependencies**:
 ```
